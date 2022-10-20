@@ -23,8 +23,15 @@ require_once("config.php");
 //echo $aluno;
 
 //UPDATE USER
+//$usuario = new Usuario();
+//$usuario->loadById(2);
+//$usuario->update("2", "123123");
+
+//ELIMINAR USER
 $usuario = new Usuario();
-$usuario->loadById(2);
-$usuario->update("2", "123123");
+$usuario->loadById(1);
+$usuario->delete();
+
+echo $usuario;
 
 ?>
